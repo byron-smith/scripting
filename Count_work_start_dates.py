@@ -12,5 +12,5 @@ df = df.loc[( (df['PayCode'] != '543') & (df['PayCode'] != '383') &(df['PayCode'
 
 out = df.groupby(['SSN'])['WorkStartDate'].nunique() #group by SSN and count unique WorkStartDates
 
-#out.to_csv("counted.csv") #print to a csv
-print(out.head(15)) #for testing in shell
+out.to_csv("counted.csv") #print to a csv
+#print(out.head(15)) #for testing in shell
